@@ -6,6 +6,7 @@
 package com.Proyecto_desarrollo.domain;
 
 public class Cliente {
+    
      private static final long serialVersionUID = 1L;
      
      private Long idCliente;

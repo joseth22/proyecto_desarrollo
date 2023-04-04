@@ -1,28 +1,12 @@
 <!DOCTYPE html>
-<html lang="es">
-    <head>
+<html xmlns:th="https:www.thymeleaf.org">
+    <head th:replace="layout/plantilla :: head">
         <title>Smooth Ticket</title>
     </head>
     <body>  
-        <header>
-            <nav>
-                <a>Smooth Ticket</a>
-                <ul>
-                    <li><a href="XXX">Iniciar Sesión</a></li>
-                    <li><a href="XXX">Boletería</a></li>
-                    <li><a href="XXX">Próximos Eventos</a></li>
-                    <li><a href="XXX">Contactarnos</a></li>
-                </ul>
-                <img scr="img/usurio.png" alt="user-l"/>
-                <p class="text">Bienvenidos</p>
-                <form class="Login-form">
-                    <input type="text" placeholder="Email o Nombre de usuario">
-                    <unput type="password" placeholder="Contraseña">
-                        <button> Iniciar Sección </button>
-                        <button> ¿Olvido su contraseña? </button>
-                </form>
-
-            </nav>
+        <header th:replace="layout/plantilla :: head">
+         <h1>Evento destacado</h1>
+        <img src="../static.images/Champions.png" alt=""/>
         </header>
         <footer>
         </footer>
