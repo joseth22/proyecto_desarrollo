@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head th:fragment="head">
+        <title>Smooth Ticket</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}"/>        
+        <link rel="stylesheet" th:href="@{/webjars/font-awesome/css/all.css}"/>        
+        <script th:src="@{/webjars/jquery/jquery.min.js}"></script>        
+        <script th:src="@{/webjars/popper.js/umd/popper.min.js}"></script>       
+        <script th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
+    </head>
+    <body>
+        <header th:fragment="header">Smooth Ticket
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item px-5">
+                        <a th:ref="@{/}">Smooth Ticket</a>
+
+                        <a th:href="@{/boleto/listado}" class="nav-menu-link nav-link"
+                           th:text="#{plantilla.boletos}">Boleteria</a>
+
+                        <a th:href="@{/evento/listado}" class="nav-menu-link nav-link"
+                           th:text="#{plantilla.eventos}">Proximos Eventos</a>
+
+                        <a th:href="@{/cliente/listado}" class="nav-menu-link nav-link"
+                           th:text="#{plantilla.clientes}">Usuario</a>
+
+                        <a>Promociones</a>
+
+                        <a>Ayuda</a>
+                        
+                        </header>  
+                        <footer th:fragment="footer" class="footer">
+                            <p>&COPY; [[#{plantilla.derechos}]]
+                                </div>
+                                </body>
+                                </html>
